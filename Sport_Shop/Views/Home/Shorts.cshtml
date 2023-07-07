@@ -1,0 +1,66 @@
+﻿<html>
+	<head>
+		<title>Шорты</title>
+		<link rel="stylesheet" href="~/css/shorts.css" />
+	</head>
+	<body>
+		<header>
+			<div id="head">
+				<div class="head">Магазин спорт товаров MS10</div>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				  @*   <li><a href="register.html">Регистрация</a></li>*@
+         @* <li>@Html.ActionLink("Главная", "Index")</li>*@
+           @* <li><a href="T-Shirts.html">Футболки</a></li>*@
+            <li> @Html.ActionLink("Футболки","TShirt")</li>
+          @*  <li><a href="shorts.html">Шорты</a></li>*@
+            <li> @Html.ActionLink("Шорты","Shorts")</li>
+          @*  <li><a href="Sneakers.html">Кроссовки</a></li>*@
+            <li> @Html.ActionLink("Кроссовки","Sneakers")</li>
+            @*<li><a href="Ball.Html">Мячи</a></li>*@
+            <li> @Html.ActionLink("Мячи","Ball")</li>
+            @*<li><a href="basket.html">Корзина</a></li>*@
+            <li> @Html.ActionLink("Корзина","Basket")</li>
+            <li><a href="https://vk.com/spasido_bolshoye">Наши партнеры   |</a></li>
+			</ul>
+		</nav>
+		<div id="head2">
+			<section>
+				<div class="card-group">
+					<div class="card">
+						<img
+							src="~/imgs/BlackShorts.jpg"
+							alt="WOR WOVEN GRAPHIC SHORT, мужские спортивные шорты"
+						/>
+						<h3>WOR WOVEN GRAPHIC SHORT, мужские спортивные шорты</h3>
+						<p class="price">2999 руб.</p>
+						<p>
+							Легкие беговые шорты новый технический материал, изготовленный из
+							переработанных пластиковых бутылок.
+						</p>
+						<button>В корзину</button>
+					</div>
+					<div class="card">
+						<img src="~/imgs/BlueShorts.jpg" alt="Синие шорты" />
+						<h3>Шорты Craft Performance Run Shorts мужские</h3>
+						<p class="price">1589 руб.</p>
+						<p>
+							Эластичный материал не стесняет движений, а вентиляционные вставки
+							отлично
+						</p>
+						<button>В корзину</button>
+					</div>
+					<div class="card">
+						<img src="~/imgs/RedShorts.jpg" alt="Шорты VOLKSWAGEN SPORT" />
+						<h3>Шорты VOLKSWAGEN SPORT</h3>
+						<p class="price">2099 руб.</p>
+						<p>100% полиэстер. 3D печать</p>
+						<button>В корзину</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

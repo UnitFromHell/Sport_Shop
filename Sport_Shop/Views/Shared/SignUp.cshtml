@@ -1,0 +1,73 @@
+﻿@model Sport_Shop.Models.User
+@{
+    ViewBag.Title = "Регистрация";
+}
+@*<form asp-action="create" asp-controller="home">
+    <div class="form-group">
+        <label asp-for="FirstNameUser" class="control-label">Фамилия</label>
+        <input type="text" asp-for="FirstNameUser" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="SecondNameUser" class="control-label">Имя</label>
+        <input type="text" asp-for="SecondNameUser" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="MiddleNameUser" class="control-label">Отчество</label>
+        <input type="text" asp-for="MiddleNameUser" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="LoginUser" class="control-label">Логин</label>
+        <input type="text" asp-for="LoginUser" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PasswordUser" class="control-label">Пароль</label>
+        <input type="password" asp-for="PasswordUser" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label">Номер телефона</label>
+        <input type="tel" pattern="+7([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" asp-for="PhoneNumber" class="form-control"/>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Email" class="control-label">Адрес электронной почты</label>
+        <input type="email" asp-for="Email" class="form-control"/>
+    </div>
+   
+    <div class="form-group">
+        <input type="submit" value = "Отправить" class="btn btn-default" />
+    </div>
+</form>*@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="~/css/reg.css">
+</head>
+<body>
+     <form asp-action="create" asp-controller="home">
+      <div class="Reg">
+        <h1 class="titile">Регистрация</h1>
+        <div class="Reg1">
+            <input class="name" class="form-control" type="text"  asp-for="SecondNameUser" placeholder="Введите имя">
+            <input class="name1" class="form-control" type="text" asp-for="FirstNameUser" placeholder="Введите фамилию">
+            <input class="name2" class="form-control" type="text" asp-for="MiddleNameUser" placeholder="Введите отчество">
+            <input class="phone_number" class="form-control" type="tel" pattern="+7([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" asp-for="PhoneNumber" placeholder="Введите номер телефона">
+            <input class="E-mail" class="form-control" type="email"  asp-for="Email" placeholder="Введите E-mail">
+            <input class="Login" class="form-control" type="text" asp-for="LoginUser" placeholder="Введите логин" />
+            <input class="Password1" class="form-control" type="password" asp-for="PasswordUser" placeholder="Введите пороль">
+            <input class="Password2" class="form-control" type="password" asp-for="PasswordUser" placeholder="Подтвердите пароль">
+         <button type="submit" value = "Отправить"> Создать аккаунт</button>
+        </div>
+        @Html.ActionLink("Авторизация","SignIn")<br> 
+        
+        </div>
+        </form>
+</body>
+</html>

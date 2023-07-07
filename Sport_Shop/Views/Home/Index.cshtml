@@ -1,0 +1,44 @@
+﻿@*@model Sport_Shop.Models.Sport_ShopContext
+@{
+    Layout = null;
+    ViewBag.Title = "Главная";
+}
+*@
+<html>
+<head>
+   
+    <title>MS10</title>
+    <link href="~/css/ShopStyle.css" rel="stylesheet">
+</head>
+<body>
+    <header> 
+       
+        <div id="head">
+        
+    <div class="head">Магазин спорт товаров MS10</div>
+    </div>
+    
+    </header>
+    <nav>
+        <ul>
+ @*           <li><a href="register.html">Регистрация</a></li>*@
+           @*<li>@Html.ActionLink("Главная", "Index")</li>*@
+           @* <li><a href="T-Shirts.html">Футболки</a></li>*@
+            <li>@Html.ActionLink("Футболки", "TShirt")</li>
+           @* <li><a href="hshorts.html">Шорты</a></li>*@
+            <li>@Html.ActionLink("Шорты", "Shorts")</li>
+           @* <li><a href="Sneakers.html">Кроссовки</a></li>*@
+            <li>@Html.ActionLink("Кроссовки", "Sneakers")</li>
+ @*           <li><a href="Ball.Html">Мячи</a></li>*@
+            <li>@Html.ActionLink("Мячи", "ball")</li>
+   @*         <li><a href="basket.html">Корзина</a></li>*@
+            <li>@Html.ActionLink("Корзина", "Basket")</li>
+            <li><a href="https://vk.com/spasido_bolshoye">Наши партнеры   |</a></li>
+        </ul>
+    </nav>
+    <div id="head2">
+  <img class="MS" src="https://4kwallpapers.com/images/wallpapers/lionel-messi-football-player-argentinian-praying-hands-3840x2400-3275.jpg" width="2000" height="528"></img>
+  <div class="head2">В нашем магазине при регистрации, скидка на первый заказ 5%</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+﻿@model  IEnumerable<Sport_Shop.Models.Product>;
+<html>
+<head>
+   
+    <title>Мячи</title>
+    <link rel="stylesheet" href="~/css/ball.css">
+</head>
+<body>
+    <header> 
+        <div id="head">
+            <div class="head">Магазин спорт товаров MS10</div>
+        </div>
+        
+   
+    </header>
+    <nav>
+        <ul>
+       @*   <li><a href="register.html">Регистрация</a></li>*@
+       @* <li>@Html.ActionLink("Главная", "Index")</li>*@
+           @* <li><a href="T-Shirts.html">Футболки</a></li>*@
+            <li> @Html.ActionLink("Футболки","TShirt")</li>
+          @*  <li><a href="shorts.html">Шорты</a></li>*@
+            <li> @Html.ActionLink("Шорты","Shorts")</li>
+          @*  <li><a href="Sneakers.html">Кроссовки</a></li>*@
+            <li> @Html.ActionLink("Кроссовки","Sneakers")</li>
+            @*<li><a href="Ball.Html">Мячи</a></li>*@
+            <li> @Html.ActionLink("Мячи","Ball")</li>
+            @*<li><a href="basket.html">Корзина</a></li>*@
+            <li> @Html.ActionLink("Корзина","Basket")</li>
+            <li><a href="https://vk.com/spasido_bolshoye">Наши партнеры   |</a></li>
+        </ul>
+    </nav>
+<div id="head2">
+    <section>
+        <div class="card-group">
+            <div class="card">
+                <img src="~/imgs/StarBall.jpg" alt="Мяч футбольный Larsen Stars">
+                <h3>Мяч футбольный Larsen Stars</h3>
+                <p class="price">1659 руб.</p>
+                <p>Клееные швы: да
+                    Материал верха: полиуретан<br>
+                    Камера: резина с бутиловым ниппелем, 60-65 г<br>
+                    Размер: 5<br>
+                    Количество панелей: 24<br>
+                    Количество подкладочных слоев: 4<br>
+                    Окружность: 68-69 см<br>
+                    Поверхность: глянцевая<br>
+                    Рекомендации: Рекомендуется для игры на траве<br>
+                    Вес: 400-440 г </p>
+                <button>В корзину</button>
+            </div>
+            @foreach (Product product in Model)
+                {
+                    if (product.TypeProductId == 3){
+                  <div class="card">
+                <img src="@product.Image" alt="@product.ProductName">
+                <h3>@product.ProductName</h3>
+                <p class="price">@product.ProductCost руб.</p>
+                @*<p>Клееные швы: да
+                    Материал верха: полиуретан<br>
+                    Камера: резина с бутиловым ниппелем, 60-65 г<br>
+                    Размер: 5<br>
+                    Количество панелей: 24<br>
+                    Количество подкладочных слоев: 4<br>
+                    Окружность: 68-69 см<br>
+                    Поверхность: глянцевая<br>
+                    Рекомендации: Рекомендуется для игры на траве<br>
+                    Вес: 400-440 г </p>*@
+                <button>В корзину</button>
+            </div>
+  
+                 }
+            }
+          @*  <div class="card">
+                <img src="~/imgs/Bascket.jpg" alt="Баскетбольный мяч Molten B7R">
+                <h3>Баскетбольный мяч Molten B7R</h3>
+                <p class="price">1089 руб.</p>
+                <p>материал: резина<br> назначение: для улицы и зала<br> количество панелей 8 шт.<br> тип соединения панелей: клееный<br> материал камеры: бутил<br> вес 612 г
+                   </p>
+            <button>В корзину</button>
+            </div>
+            <div class="card">
+                <img src="~/imgs/volleyball.jpg" alt="Мяч для пляжного волейбола MIKASA">
+                <h3>Мяч для пляжного волейбола MIKASA</h3>
+                <p class="price">8199 руб.</p>
+                <p>Профессиональный мяч для пляжного волейбола. Официальный мяч FIVB для пляжного волейбола.</p>
+            <button>В корзину</button>      
+            </div>*@
+        </div>
+    </section>
+</div>
+</body>
+</html>
